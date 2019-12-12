@@ -1,0 +1,111 @@
+<meta charset="utf-8">
+<script>
+/*	var i = 0;
+		while (i < 3) {
+		alert("Pivet");  
+		i++;
+	}
+
+
+
+
+	// если i > 3, то мы даже не зайдем в цикл и итерация не выполнится
+
+
+
+
+	var i = 0
+	do {
+		alert("privet");  
+		i++
+	} while (i < 3);
+
+
+
+
+
+	// если i > 3, то мы хотя бы 1 -ин раз прогоним цикл.
+
+
+
+
+
+	do {
+		var a = +prompt("4iclo bolee 0"); 
+	} while (a <= 0 || isNaN(a)); 
+
+
+
+
+
+	// тут у нас цикл на основе проверки вводимых данных. Пока пользователь не введет число более 0, мы не выйдем из цикла. Если он введет буквы вместо цифр, то мы пофиксим это функцией isNan(a)
+
+
+
+
+	var p = +prompt("Vvedite koli4estvo privetov");
+	for (var i = 1; i <= p; i++) {
+		alert("Pivet #" + i);
+	} */
+
+
+
+
+	// по сути то же самое, что while, только удобнее работать и меньше кода. Очень важный цикл, часто используется.
+
+
+
+
+
+	/*var answer = parseInt(Math.random() * 100); // Math.random() дает число от 0 до 1 включительно рандомное
+
+	while (true) {
+		var userAnswer = prompt("Введите число от 1 до 100, для выхода из игры напишите q.");
+		if (userAnswer == "q") {
+			break;
+		}
+
+		userAnswer = parseInt(userAnswer);  // фунци parseInt превращает в число и убирает дробную часть
+
+		if (userAnswer > answer) {
+			alert("Ваш ответ слишком большой.");
+		} else if (userAnswer < answer) {
+			alert("Ваш ответ слишком маленький");
+		} else if (userAnswer == answer) {
+			alert("Вы угадали!");
+			break;
+		} else {
+			alert("Необходимо ввести число!");
+		}
+	} */
+
+
+
+	var answer = parseInt(Math.random() * 100); // Math.random() дает число от 0 до 1 включительно рандомное
+
+	for (var i = 1; i <= 2; i++) {
+	 
+		var userAnswer = prompt("Игрок № " + i + ", вводите число от 1 до 100, для выхода из игры напишите q.");
+		if (userAnswer == "q") {
+			break;
+		}
+
+		userAnswer = parseInt(userAnswer);  // фунци parseInt превращает в число и убирает дробную часть
+
+		if (userAnswer > answer) {
+			alert("Ваш ответ слишком большой.");
+		} else if (userAnswer < answer) {
+			alert("Ваш ответ слишком маленький");
+		} else if (userAnswer == answer) {
+			alert("Вы угадали!");
+			break;
+		} else {
+			i--;
+			alert("Необходимо ввести число!");
+		}
+		if (i == 2) {
+			i = 0;
+		}
+	} 
+	
+</script>
