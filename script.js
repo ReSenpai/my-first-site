@@ -214,7 +214,7 @@ function answer2(a) {
 		"<p>ТЫ СТАЛ СВЕРХЧЕЛОВЕКОМ</p>" + cont(3)
 	}else if (a == 4) {
 		document.getElementById('box').innerHTML =
-		"<p>ТЫ ЧО ОХУЕЛ?</p>" + cont(3)
+		"<p>ТЫ ЧО ОХ*ЕЛ?</p>" + cont(3)
 	}
 }
 
